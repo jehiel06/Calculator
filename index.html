@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="icon" href="image/logo2.png">
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@200&family=Prompt:wght@300;400&family=Saira:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>       
+        <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="res" disabled> 
+                    </td></tr>
+                <tr>
+                    <td><input type="button" value="AC" class="cl" onclick="Clear()"></td>
+                    <td><input type="button" value="DEL" class="dl" onclick="del()"></td>
+                    <td><input class="btn" type="button" value="%" onclick="disp('%')"></td>
+                    <td><input class="btn" type="button" value="÷" onclick="disp('/')"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="7" onclick="disp('7')"></td>
+                    <td><input class="btn" type="button" value="8" onclick="disp('8')"></td>
+                    <td><input class="btn" type="button" value="9" onclick="disp('9')"></td>
+                    <td><input class="btn" type="button" value="×" onclick="disp('*')"></td>
+            
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="4" onclick="disp('4')"></td>
+                    <td><input class="btn" type="button" value="5" onclick="disp('5')"></td>
+                    <td><input class="btn" type="button" value="6" onclick="disp('6')"></td>
+                    <td><input class="btn" type="button" value="-" onclick="disp('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="1" onclick="disp('1')"></td>
+                    <td><input class="btn" type="button" value="2" onclick="disp('2')"></td>
+                    <td><input class="btn" type="button" value="3" onclick="disp('3')"></td>      
+                    <td><input class="btn" type="button" value="+" onclick="disp('+')"></td>
+
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="," onclick="disp(',')"></td>
+                    <td><input class="btn" type="button" value="0" onclick="disp('0')"></td>
+                    <td><input class="btn" type="button" value="." onclick="disp('.')"></td>
+                    <td><input class="ans" type="button" id="ans" value="=" onclick="Calc()"></td>
+             
+                </tr>
+        </table>
+        <div class="jehi">
+        <h3>Developed by <br>Jehiel</h3>
+    </div>
+        <script src="script.js"></script>
+        </body>
+</html>
